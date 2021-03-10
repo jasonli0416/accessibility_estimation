@@ -321,13 +321,13 @@ if __name__ == "__main__":
 
     # 以下代码用来测试最新版代码的效果
     for each in ['entr_0_per', 'entr_1_per', 'entr_2_1_p']:
-        ac = accessibility_calculator(npy_file=r"D:/pyprojectlbw/odtime_generate/datarep/2198_2197_transit_withfee_sz_1108.npy",
+        ac = accessibility_calculator(npy_file=r"./datarep/odfile/2198_2197_transit_withfee_sz_1108.npy",
                                       research_area_file=r'D:\multicities\data\深圳分区\sz_10_acc_entro.shp',
                                       opportunity_index=each,
                                       time_boundary=3300,
                                       deprived_boundary=0.05,
                                       is_timefeecost_model=True)
-        ac.to_shp(file_path=r'./datarep//sz_access_liangqi_dir/test/sz_access_NOV_nodel_tfc_{}.shp'.format(each))
+        ac.to_shp(file_path=r'./datarep/sz_access_liangqi_dir/test/sz_access_NOV_nodel_tfc_{}.shp'.format(each))
 
     # 以下代码用来测试深圳3.10收集的数据
     # for each in ['entr_0_per', 'entr_1_per', 'entr_2_1_p']:
